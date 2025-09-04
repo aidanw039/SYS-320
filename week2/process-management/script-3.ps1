@@ -1,0 +1,1 @@
+Get-Service | where { $_.Status -eq "Stopped" } | Sort-Object | Export-Csv -Path C:\users\champuser\stoppedservices.csv

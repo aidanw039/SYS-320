@@ -1,0 +1,1 @@
+Get-Process | select ProcessName, Path, Id | where-object { $_.Path -notlike "*system32*" -and $_.Path}  
