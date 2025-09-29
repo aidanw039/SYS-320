@@ -29,6 +29,21 @@ function checkUser($name) {
     return $true
 
 }
+function atRiskUsers($days) {
+       if ($days -eq $null) {$days = 90}
+       $atRiskUsers = @()
+       $failedLogins = (getFailedLogins $days | group-object Name )
+       for ( $i=0;$i -lt $failedLogins.Count; $i++) {
+        if ($failedLogins[$i].Count -ge 10) {
+            $atRiskUsers += [pscustomobject] @{
+                "Name" = $failedLogins.Group[$i].User;
+                "Count" = $failedLogins[$i].Count;
+            }
+        }
+        }
+        return $atRiskUsers
+
+}
 
 
 <# ******************************

@@ -194,19 +194,8 @@ while($operation){
    
     elseif ($choice -eq 0) {
        $days = Read-Host -Prompt "Please enter that ammount of days you wish to search to: "
-       $atRiskUsers = @()
-       $failedLogins = (getFailedLogins $days | group-object Name )
-       for ( $i=0;$i -lt $failedLogins.Count; $i++) {
-        if ($failedLogins[$i].Count -ge 10) {
-            $atRiskUsers += [pscustomobject] @{
-                "Name" = $failedLogins.Group[$i].User;
-                "Count" = $failedLogins[$i].Count;
-            }
-        }
-        }
-        Write-Output $atRiskUsers | Format-Table -AutoSize
-
-
+       
+       Write-Host (atRiskUsers $days | format-table -AutoSize | Out-String) 
              
     }
 
