@@ -1,4 +1,4 @@
-<tbody>ACC 135-51;Accounting for Decision Making;3;4;T;5:30PM-8:15PM;Kelli-Jo Cloutier; 8/25 - 12/12;None;GBTC 114;
+ACC 135-51;Accounting for Decision Making;3;4;T;5:30PM-8:15PM;Kelli-Jo Cloutier; 8/25 - 12/12;None;GBTC 114;
 ACC 230-01;Intermediate Accounting I;3;17;MTH;8:30AM-9:45AM;John Padgett; 8/25 - 12/12;ACC-135;GBTC 112;
 ACC 325-51;Federal Taxation;3;16;T;5:30PM-8:15PM;Cathy Duffy; 8/25 - 12/12;Complete ACC-135.;JOYC 302;
 ACC 390-81;Accounting Internship;2;23;TBA;Barrie Silver; 8/25 - 12/12;Complete ACC-231;
@@ -507,4 +507,4 @@ WRT 301-01;Professional Practices II;1;4;M;10AM-10:50AM;Sarah Stack; 8/25 - 12/1
 WRT 346-01;Prof.Pathways in Publishing;3;-1;M;4PM-6:45PM;Tanya Stone; 8/25 - 12/12;Look for 45 complete... more;CCM 424;
 WRT 350-01;Reading  Writing: Spec Topics;3;1;T;4PM-6:45PM;Tanya Stone; 8/25 - 12/12;WRT-120 AND either W... more;CCM 442;
 WRT 401-01;Professional Practices 2;1;4;F;1PM-1:50PM;Rebecca Holt; 8/25 - 12/12;WRT-201;JOYC 103;
-</tbody>
+

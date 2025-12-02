@@ -15,7 +15,9 @@ xmlstarlet select --template --copy-of \
 # 1- Replacing every </tr> with a line break
 echo "$toolOutput" | sed 's/<\/tr>/\n/g' | \
                      sed -e 's/&amp;//g' | \
-                     sed -e 's/<tr>//g' | \
+                     sed -e 's/<\/tbody>//g' | \
+                     sed -e 's/<tbody>//g' | \
+		     sed -e 's/<tr>//g' | \
                      sed -e 's/<td[^>]*>//g' | \
                      sed -e 's/<\/td>/;/g' | \
                      sed -e 's/<[/\]\{0,1\}a[^>]*>//g' | \
